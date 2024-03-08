@@ -43,11 +43,6 @@
 
 a {
 	text-decoration: none;
-	transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-	color: #3172b9;
 }
 
 ul {
@@ -63,7 +58,6 @@ img {
 html {
 	font-family: 'Muller', sans-serif;
 	background-color: #f1f1f1;
-	scroll-behavior: smooth;
 }
 
 .container {
@@ -87,22 +81,6 @@ html {
 	padding-left: 40px;
 }
 
-:root {
-	--orange: #cc9933;
-	--gray: #666;
-	--white: #fff;
-}
-
-.button-dark-active:hover {
-	transform: translate(3px, 1px);
-	background-color:#f8c25777
-}
-
-.button-light-active:hover {
-	transform: translate(3px, 1px);
-	background-color:#dfa739
-}
-
 /* logo */
 
 .header-logo-container {
@@ -121,21 +99,21 @@ html {
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 1;
-	color: var(--gray);
+	color: #666;
 }
 
 .header-lk {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 1;
-	color: var(--orange);
+	color: #cc9933;
 }
 
 .header-lk-icon {
 	display: inline-block;
 	height: 14px;
 	width: 14px;
-	background: url(../img/yellowarrow.png) center center no-repeat transparent ;
+	background: url(img/yellowarrow.png) center center no-repeat transparent ;
 	background-size: contain;
 }
 
@@ -146,7 +124,7 @@ html {
 	padding-left: 25px;
 	padding-bottom: 11px;
 	margin-bottom: 70px;
-	background-color: var(--white);
+	background-color: #fff;
 	border-radius: 12px;
 }
 
@@ -199,11 +177,6 @@ html {
     right: 20px;
 	bottom: 6px;
 	border-style: none;
-	transition: transform 0.5s;
-}
-
-.search-button:hover {
-	transform: translate(5px, 2px);
 }
 
 .search-icon {
@@ -219,6 +192,7 @@ html {
 }
 
 .reservation {
+	flex: 1 1;
 	width: 100%;
 	margin-right: 55px;
 }
@@ -232,7 +206,6 @@ html {
 .reservation-input-list {
 	display: flex;
 	flex-direction: column;
-	min-width: 280px;
 }
 
 .reservation-input-item {
@@ -258,12 +231,9 @@ html {
 	font-weight: bold;
 	font-size: 16px;
 	color: white;
-	background-color:  var(--orange);
+	background-color:  #cc9933;
 	border-style: none;
 	border-radius: 12px;
-	transition-property: transform, background-color;
-	transition-duration: 0.1s;
-	transition-timing-function: ease-in-out;
 }
 
 .reservation-avaible {
@@ -275,7 +245,7 @@ html {
 
 .reservation-avaible-number {
 	font-size: 16px;
-	color: var(--orange);
+	color: #cc9933;
 }
 
 .lux-rooms {
@@ -283,14 +253,14 @@ html {
 	padding-left: 40px;
 	width: 595px;
 	display: inline-block;
-	background-image: url(../img/22.png);
+	background-image: url(img/22.png);
 }
 
 .lux-title {
 	max-width: 50%;
 	margin-top: 0px;
 	margin-bottom: 25px;
-	color: var(--white);
+	color: #fff;
 	font-size: 66px;
 	line-height: 1;
 }
@@ -307,7 +277,7 @@ html {
 	padding-right: 15px;
 	color: #ffcc66;
 	font-size: 16px;
-	background: url(../img/Yrightarrow.png) right no-repeat transparent ;
+	background: url(img/Yrightarrow.png) right no-repeat transparent ;
 	background-size: contain;
 }
 
@@ -327,7 +297,7 @@ html {
 	max-width: 75%;
 	font-size: 16px;
 	line-height: 32px;
-	color: var(--gray);
+	color: #666;
 }
 
 /* services */
@@ -348,19 +318,15 @@ html {
 	padding-left: 40px;
 	width: 572px;
 	margin-bottom: 25px;
-	background-color: var(--white);
+	background-color: #fff;
 	border-style: none;
 	border-radius: 12px;
 }
 
-.service:not(:nth-child(2n)) {
-	margin-right: 22px;
-}
-
 .service-link {
 	padding-right: 15px;
-	color: var(--orange);
-	background: url(../img/Yrightarrow.png) right no-repeat transparent ;
+	color: #cc9933;
+	background: url(img/Yrightarrow.png) right no-repeat transparent ;
 
 }
 
@@ -381,22 +347,22 @@ html {
 }
 
 .serv1 {
-	background-image: url(../img/13.png);
+	background-image: url(img/13.png);
 	background-repeat: no-repeat;
 }
 
 .serv2 {
-	background-image: url(../img/14.png);
+	background-image: url(img/14.png);
 	background-repeat: no-repeat;
 }
 
 .serv3 {
-	background-image: url(../img/15.png);
+	background-image: url(img/15.png);
 	background-repeat: no-repeat;
 }
 
 .serv4 {
-	background-image: url(../img/16.png);
+	background-image: url(img/16.png);
 	background-repeat: no-repeat;
 }
 
@@ -412,19 +378,16 @@ html {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .advantage {
 	padding-left: 40px;
 	width: 275px;
 	margin-bottom: 25px;
-	background-color: var(--white);
+	background-color: #fff;
 	border-style: none;
 	border-radius: 12px;
-}
-
-.advantage:not(:nth-child(4n)) {
-	margin-right: 22px;
 }
 
 .advantage-text {
@@ -437,55 +400,53 @@ html {
 }
 
 .adv1 {
-	background-image: url(../img/1.png);
+	background-image: url(img/1.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv2 {
-	background-image: url(../img/2.png);
+	background-image: url(img/2.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv3 {
-	background-image: url(../img/3.png);
+	background-image: url(img/3.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv4 {
-	background-image: url(../img/4.png);
+	background-image: url(img/4.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv5 {
-	background-image: url(../img/5.png);
+	background-image: url(img/5.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv6 {
-	background-image: url(../img/6.png);
+	background-image: url(img/6.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 .adv7 {
-	background-image: url(../img/7.png);
+	background-image: url(img/7.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 .adv8 {
-	background-image: url(../img/8.png);
+	background-image: url(img/8.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
 }
 
 /* resorts */
-
-
 
 .resorts-title {
 	margin-bottom: 20px;
@@ -496,18 +457,15 @@ html {
 	margin-bottom: 40px;
 	width: 100%;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .resort { 
-	width: 373px;
+	width: 375px;
 	margin-bottom: 25px;
-	background-color: var(--white);
+	background-color: #fff;
 	border-style: none;
 	border-radius: 12px;
-}
-
-.resort:not(:nth-child(3n)) {
-	margin-right: 21px;
 }
 
 .resort-textblock {
@@ -547,20 +505,16 @@ html {
 .resort-rooms-button {
 	padding: 15px 20px;
 	font-weight: bold;
-	color: var(--orange);
+	color: #cc9933;
 	background-color: transparent;
-	border-color: var(--orange);
+	border-color: #cc9933;
 	border-style: solid;
 	border-radius: 12px;
-	transition-property: transform, background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
 }
 
 .res9 {
 	padding-top: 365px;
-	background-image: url(../img/32.png);
-	position: relative;
+	background-image: url(img/32.png);
 }
 
 .all-resorts-text {
@@ -569,42 +523,9 @@ html {
 	padding-right: 20px;
 	font-size: 22px;
 	font-weight: 500;
-	background: url(../img/whiterightarrow.png) right no-repeat transparent ;
-	color: var(--white);
-}
-
-/* .all-resorts-text::before {
-	position: absolute;
-	content: '';
-	display: block;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-} */
-
-.swiper {
-    width: 373px;
-	margin-bottom: 40px;
-}
-
-.swiper-pagination-bullet {
-	width: 20px;
-	height: 20px;
-	text-align: center;
-	line-height: 20px;
-	font-size: 16px;
-	color: #000;
-	opacity: 1;
-	background: rgba(0, 0, 0, 0.2);
-  }
-
-.swiper-pagination-bullet-active {
+	background: url(img/whiterightarrow.png) right no-repeat transparent ;
 	color: #fff;
-	background: #007aff;
-  }
-
-/* contacts */
+}
 
 .contacts-title {
 	margin-bottom: 30px;
@@ -617,7 +538,7 @@ html {
 	padding-left: 45px;
 	padding-right: 45px;
 	padding-bottom: 45px;
-	background-color: var(--white);
+	background-color: #fff;
 	border-radius: 12px;
 }
 
@@ -635,7 +556,7 @@ html {
 	margin: 0px;
 	font-size: 22px;
 	font-weight: 600;
-	color: var(--gray);
+	color: #666;
 }
 
 .contact-item-content {
@@ -662,22 +583,19 @@ html {
 .contact-item-link {
 	display: table;
 	line-height: 24px;
-	color: var(--orange);
+	color: #cc9933;
 }
 
 .contact-info-button {
 	padding: 25px 25px;
 	font-weight: bold;
-	color: var(--orange);
+	color: #cc9933;
 	background-color: transparent;
-	border-color: var(--orange);
+	border-color: #cc9933;
 	border-style: solid;
 	border-radius: 12px;
-	transition-property: transform, background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
-}
 
+}
 
 .contacts-feedback-box {
 	display: flex;
@@ -720,12 +638,9 @@ html {
 	font-weight: bold;
 	font-size: 16px;
 	color: white;
-	background-color:  var(--orange);
+	background-color:  #cc9933;
 	border-style: none;
 	border-radius: 12px;
-	transition-property: transform, background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
 }
 
 .footer-box {
@@ -754,14 +669,14 @@ html {
 }
 
 .footer-confidential-yellowtext {
-	color: var(--orange);
+	color: #cc9933;
 	font-size: 16px;
 }
 
 .footer-contacts {
 	padding-top: 45px;
 	padding-right: 255px;
-	background-image: url(../img/sun.png);
+	background-image: url(img/sun.png);
 	background-repeat: no-repeat;
 	background-position: 100px 150px;
 }
@@ -790,21 +705,21 @@ html {
 }
 
 .fslink1 {
-	background-image: url(../img/tripadvisor.png);
+	background-image: url(img/tripadvisor.png);
 }
 
 .fslink2 {
-	background-image: url(../img/twitter.png);
+	background-image: url(img/twitter.png);
 }
 
 .fslink3 {
-	background-image: url(../img/facebook.png);
+	background-image: url(img/facebook.png);
 }
 
 .fslink4 {
-	background-image: url(../img/social.png);
+	background-image: url(img/social.png);
 }
 
 .fslink5 {
-	background-image: url(../img/google-plus-social-logotype.png);
+	background-image: url(img/google-plus-social-logotype.png);
 }
