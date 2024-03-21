@@ -48,6 +48,10 @@
         align-items: center;
     }
 
+    .outside-title {
+        padding-left: 0px;
+    }
+
     .header-logo-container {
         display: block;
         padding-bottom: 10px;
@@ -199,7 +203,7 @@
     } */
 
     .specialoffers {
-        width: auto;
+        width: 100%;
         max-width: 595px;
     }
 
