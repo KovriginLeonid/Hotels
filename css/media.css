@@ -112,7 +112,7 @@
         width: 100%;
     }
 
-    .header-nav-burger {
+    button.header-nav-burger {
         display: block;
         position: relative;
         width: 40px;
@@ -121,6 +121,13 @@
         border: 0px;
         background-color: var(--orange);
         border-radius: 9px;
+    }
+
+    .header-nav-burger.header-nav-burger--active {
+        position: absolute;
+        top: 10px;
+        left: 260px;
+        border: 1px solid white;
     }
 
     .burger-line {
@@ -143,13 +150,6 @@
 
     .burger-line:nth-child(3) {
         bottom: 13px;
-    }
-
-    .header-nav-burger--active {
-        position: absolute;
-        top: 10px;
-        left: 260px;
-        border: 1px solid white;
     }
 
     .header-nav-burger--active 
