@@ -58,6 +58,7 @@
         display: block;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 20px;
         width: fit-content;
     }
 
@@ -243,7 +244,7 @@
     }
 
     .resorts-list {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         flex-wrap: nowrap;
     }
 
@@ -305,7 +306,12 @@
 
 @media (max-width: 650px) {
 
+    .findroom-button {
+        margin-bottom: 15px;
+    }
+
     .advantage-list {
+        margin-bottom: 5px;
         flex-direction: column;
         width: auto;
     }
@@ -319,6 +325,7 @@
     }
 
     .advantages_more-button {
+        margin-bottom: 50px;
         display: block;
     }
 
