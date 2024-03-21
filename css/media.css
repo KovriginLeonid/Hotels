@@ -49,7 +49,24 @@
     }
 
     .header-logo-container {
-        flex-direction: row;
+        display: block;
+        padding-bottom: 10px;
+
+    }
+
+    .logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    .header-lk {
+        float: right;
+    }
+
+    .nav-panel-container {
+        width: 100%;
     }
 
     .nav-list {
@@ -85,6 +102,14 @@
     .nav-list--active {
         visibility: visible;
         transform: none;
+    }
+
+    .nav-panel-search {
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
     }
 
     .header-nav-burger {
@@ -156,18 +181,30 @@
     }
 
     .reservation {
-        width: auto;
-        margin-right: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 595px;
         margin-bottom: 40px;
     }
 
-    .reservation-container {
+    /* .reservation-container {
         display: flex;
         flex-wrap: wrap;
+    } */
+
+    /* .reservation-input-list {
+        width: auto;
+        max-width: 595px;
+    } */
+
+    .specialoffers {
+        width: auto;
+        max-width: 595px;
     }
 
-    .reservation-input-list {
-        width: 595px;
+    .lux-rooms {
+        width: auto;
+        background-repeat: round;
     }
 
     .about-us-container {
@@ -220,8 +257,11 @@
     }
 
     .contacts-info {
+        width: 100%;
         margin-right: 0px;
         margin-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .feedback {
@@ -231,6 +271,7 @@
     .footer-box {
         flex-direction: row;
         align-items: normal;
+        background-position: 30% 100%;
     }
 
     /* .footer-box:last-child {
@@ -243,21 +284,50 @@
 
     .footer-confidential-text {
         margin-bottom: 15px;
+        white-space: normal;
     }
 
     .footer-contacts  {
+        flex: 0 1 80%;
         padding-top: 0px;
         padding-bottom: 40px;
         padding-left: 50px;
         padding-right: 0px;
-        background-position: 140px 25px;
     }
 
     .footer-social {
         padding-top: 0px;
         padding-bottom: 40px;
-        padding-right: 50px;
+        padding-right: 30px;
         align-items: end;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .advantage-list {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .advantage:not(:nth-child(2n)) {
+        margin-right: 0px;
+    }
+
+    .advantage:nth-child(n+3) {
+        display: none;
+    }
+
+    .advantages_more-button {
+        display: block;
+    }
+
+    .advantage.advantage--visible {
+        display: block;
+    }
+
+    .btn-more--hidden {
+        display: none;
     }
 }
 

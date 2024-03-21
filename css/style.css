@@ -237,7 +237,6 @@ html {
 
 .reservation-input-item {
 	margin-bottom: 25px;
-	flex: 1 1;
 }
 
 .reservation-input {
@@ -481,6 +480,22 @@ html {
 	background-image: url(../img/8.png);
 	background-repeat: no-repeat;
 	background-position: 40px 40px;
+}
+
+.advantages_more-button {
+	display: none;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 25px 30px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	background-color:  var(--orange);
+	border-style: none;
+	border-radius: 12px;
+	transition-property: transform, background-color;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in-out;
 }
 
 /* resorts */
@@ -732,6 +747,9 @@ html {
 	display: flex;
     background-color: #333333;
     border-radius: 12px;
+	background-image: url(../img/sun.png);
+    background-repeat: no-repeat;
+    background-position: 565px 150px;
 }
 
 .footer-confidential {
@@ -761,9 +779,6 @@ html {
 .footer-contacts {
 	padding-top: 45px;
 	padding-right: 255px;
-	background-image: url(../img/sun.png);
-	background-repeat: no-repeat;
-	background-position: 100px 150px;
 }
 
 .footer-contacts-number {

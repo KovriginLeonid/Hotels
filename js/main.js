@@ -34,6 +34,14 @@ menulinks.forEach(function (el) {
 //     }
 //   };
 
+const btnMore = document.querySelector('.advantages_more-button');
+const advantage = document.querySelectorAll ('.advantage');
+
+btnMore.addEventListener('click', () => {
+     advantage.forEach(el => { el.classList.add('advantage--visible') });
+     btnMore.closest('.btn-reset').classList.add('btn-more--hidden');
+});
+
 
 
   const AdaptSwiper = document.querySelector('#Swiper');
