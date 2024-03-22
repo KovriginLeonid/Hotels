@@ -66,8 +66,13 @@
         width: fit-content;
     }
 
+    .header-cellnumber {
+        font-size: 17px;
+    }
+
     .header-lk {
         float: right;
+        font-size: 17px;
     }
 
     .nav-panel-container {
@@ -256,6 +261,12 @@
     .swiper-button-prev, .swiper-button-next {
         margin-top: calc(5px - (var(--swiper-navigation-size)/ 2));
         color: var(--orange);
+    }
+
+    .swiper-pagination-bullet {
+        width: 23px;
+        height: 23px;
+        line-height: 23px;
     }
 
     .swiper-pagination-bullet-active {
