@@ -91,6 +91,7 @@ html {
 	--orange: #cc9933;
 	--gray: #666;
 	--white: #fff;
+	--swiper-navigation-size: 35px;
 }
 
 .button-dark-active:hover {

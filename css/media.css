@@ -262,6 +262,10 @@
         background-color: var(--orange);
     }
 
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px);
+    }
+
     .resort:not(:nth-child(3n)) {
         margin-right: 0px;
     }
