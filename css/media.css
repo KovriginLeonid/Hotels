@@ -253,6 +253,15 @@
         flex-wrap: nowrap;
     }
 
+    .swiper-button-prev, .swiper-button-next {
+        margin-top: calc(5px - (var(--swiper-navigation-size)/ 2));
+        color: var(--orange);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--orange);
+    }
+
     .resort:not(:nth-child(3n)) {
         margin-right: 0px;
     }

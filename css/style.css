@@ -200,6 +200,7 @@ html {
 	bottom: 6px;
 	border-style: none;
 	transition: transform 0.5s;
+	background-color: transparent;
 }
 
 .search-button:hover {
